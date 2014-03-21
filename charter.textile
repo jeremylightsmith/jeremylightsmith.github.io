@@ -1,0 +1,18 @@
+---
+title: Charter
+layout: default
+---
+
+h3. Vision
+
+...
+
+h3. Mission
+
+...
+
+h3. Simple Rules
+
+These are our principles. On a day to day basis, this is how we make decisions...
+
+...

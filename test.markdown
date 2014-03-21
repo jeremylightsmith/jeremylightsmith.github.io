@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "Welcome to Jekyll!"
+categories: jekyll update
+---
+
 This is a test
 ==============
 
