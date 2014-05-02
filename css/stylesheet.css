@@ -421,3 +421,15 @@ Small Device Styles
   }
 
 }
+
+.person {
+  width: 200px;
+  text-align: center;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.person img {
+  width: 200px;
+  float: left;
+}

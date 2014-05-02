@@ -5,10 +5,26 @@ layout: homepage
 
 h3. The People
 
-* Jeremy
-* Karissa
-* Adam
-* Eri
+<div class="person">
+  !images/adam-square.jpg!
+  Adam
+</div>
+<div class="person">
+  !images/eri-square.jpg!
+  Eri
+</div>
+<div class="person">
+  !images/jeremy-square.jpg!
+  Jeremy
+</div>
+<div class="person">
+  !images/karissa-square.jpg!
+  Karissa
+</div>
+<div class="person">
+  !images/mika-square.jpg!
+  Mika
+</div>
 
 h3. Why we did it...
 
