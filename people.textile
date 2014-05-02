@@ -1,0 +1,14 @@
+---
+title: People
+layout: default
+---
+
+h3. Adam Kardos
+
+h3. Eri Kardos
+
+h3. Jeremy Lightsmith
+
+h3. Karissa Lightsmith
+
+h3. Mika Lightsmith
