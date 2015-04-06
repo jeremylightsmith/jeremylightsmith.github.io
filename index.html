@@ -1,6 +1,6 @@
 ---
 layout: homepage
-page-class: page-top
+page-class: home-page
 partners:
 - name: Jeff Patton 
   img: jeff_patton2.jpg
@@ -58,6 +58,30 @@ testimonials:
 ---
 <!-- hero -->
 <div class="odd-container">
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="images/jeremy-brown-shirt.jpg" class="col-md-12"/>
+        </div>
+        <div class="col-md-8">
+          <h1>If your software organization is stuck, I can help.</h1>
+
+          <p>If you are struggling, I can help you stablize.
+          <p>If you are good, I can show you what great looks like.
+          <p>If you don't know where to start, I can give you some choices.
+
+          <p><a class="btn btn-primary btn-lg" href="mailto:jeremy.lightsmith@gmail.com" role="button">Email Me Today</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="even-container">
+</div>
+
+<!-- <div class="even-container">
   <div class="container hero-bit">
     <img src="images/jeremy-brown-shirt.jpg" class="jeremy-arms" style="margin-top: 40px"/>
 
@@ -83,7 +107,7 @@ testimonials:
         <p>If you are trying to bring agile / lean to 10 or 200 people, I can help.</p>
       </div>
     </div>
-
+ -->
 <!--     <p>I help teams unleash themselves. I might be able to help you if you are a...</p>
 
     <h4>Dev team that wants to create great products.</h4>
@@ -142,17 +166,17 @@ testimonials:
   <div class="container">
     <h1><span class="case-study">case study</span>nordstrom innovation lab</h1>
 
-    <div class="video-container">
-      <iframe width="750" height="411" src="http://www.youtube.com/embed/szr0ezLyQHY?wmode=transparent" frameborder="0" allowfullscreen="1"></iframe>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" width="750" height="411" src="http://www.youtube.com/embed/szr0ezLyQHY?wmode=transparent" frameborder="0" allowfullscreen="1"></iframe>
     </div>
 
     <br/>
 
-    <p>
-      "It's one thing to talk about 'rapid experimentation' and 'validated learning' as abstract concepts. It's quite another to see them in action, in a real-world setting."
+    <blockquote>
+      It's one thing to talk about 'rapid experimentation' and 'validated learning' as abstract concepts. It's quite another to see them in action, in a real-world setting.
       <br/>
       - Eric Ries, <a href="http://www.startuplessonslearned.com/2011/10/case-study-nordstrom-innovation-lab.html">Startup Lessons Learned</a>
-    </p>
+    </blockquote>
 
   </div>
 </div>
@@ -182,18 +206,18 @@ testimonials:
 </div>
 
 <!-- testimonials -->
-<div class="odd-container">
+<div class="odd-container testimonials">
   <div class="container">
     <h1>testimonials</h1>
 
     {% for testimonial in page.testimonials %}
-      <div class="testimonial">
+      <blockquote>
         {{ testimonial.text | markdownify }}
         <div class="author">
-          <div class="name">{{ testimonial.name }}</div>
-          <div class="position">{{ testimonial.position }}</div>
+          - <span class="name">{{ testimonial.author }}</span>,
+          <span class="position">{{ testimonial.position }}</span>
         </div>
-      </div>
+      </blockquote>
     {% endfor %}
   </div>
 </div>
@@ -211,11 +235,7 @@ testimonials:
     <p>email me : <a href="mailto:jeremy.lightsmith@gmail.com"> jeremy.lightsmith@gmail.com</a></p>
     <p>
       or find me on : <br/>
-      <a href="https://twitter.com/lightsmith"><img src="images/social-icons/twitter_64.png"/></a>
-      <a href="http://www.linkedin.com/in/jeremylightsmith/"><img src="images/social-icons/linkedin_64.png"/></a>
-      <a href="https://plus.google.com/110046023314373001534/"><img src="images/social-icons/googleplus_64.png"/></a>
-      <a href="http://www.facebook.com/jeremy.lightsmith"><img src="images/social-icons/facebook_64.png"/></a>
-      <a href="https://github.com/jeremylightsmith"><img src="images/social-icons/github_64.png"/></a>
+      {% include social_links.html %}
     </p>
   </div>
 </div>
