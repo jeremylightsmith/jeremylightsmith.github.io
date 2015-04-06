@@ -1,7 +1,7 @@
-sproutgrove.github.io
+jeremylightsmith.github.io
 =====================
 
-This is the homepage of the famous Sprout Grove (in Seattle)
+This is Jeremy Lightsmith's consulting website
 
 Run Locally
 -----------
