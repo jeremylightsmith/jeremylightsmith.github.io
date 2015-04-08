@@ -17,6 +17,16 @@ h1 span {
   text-shadow: none;
 }
 
+// $bar1-color: #BD1B03;
+// $bar2-color: #063ABD;
+// $bar3-color: #018001;
+// $bar4-color: #E4A123;
+
+$bar1-color: #d9534f; // red
+$bar2-color: #337ab7; // blue
+$bar3-color: #5cb85c; // green
+$bar4-color: #f0ad4e; // yellow
+
 .home-page {
   // .jeremy-arms {
     // margin-top: 300px;
@@ -42,6 +52,24 @@ h1 span {
       // background-color: blue;
       // position: static;
       // height: 100%;
+    }
+    .what-i-do {
+      thead {
+        th {
+          width: 25%;
+          color: white;
+        }
+        .dev        { background-color: $bar1-color;}
+        .team       { background-color: $bar2-color;}
+        .org        { background-color: $bar3-color;}
+        .enterprise { background-color: $bar4-color;}
+      }
+      tbody {
+        .dev        { background-color: rgba($bar1-color, 0.1);}
+        .team       { background-color: rgba($bar2-color, 0.1);}
+        .org        { background-color: rgba($bar3-color, 0.1);}
+        .enterprise { background-color: rgba($bar4-color, 0.1);}
+      }
     }
   }
 
