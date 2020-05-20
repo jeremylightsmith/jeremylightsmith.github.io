@@ -1,7 +1,7 @@
 jeremylightsmith.github.io
 =====================
 
-This is Jeremy Lightsmith's consulting website
+This is Jeremy Lightsmith's website
 
 Run Locally
 -----------

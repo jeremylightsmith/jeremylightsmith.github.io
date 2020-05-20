@@ -1,155 +1,176 @@
 ---
-layout:
 ---
+  // http://meyerweb.com/eric/tools/css/reset/
+  //  v2.0 | 20110126
+  //  License: none (public domain)
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+// HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
 body {
-  padding-top: 50px;
+  line-height: 1;
 }
 
-.navbar-brand img {
-  height: 50px;
-  margin: -20px 0;
-  background: color;
+ol, ul {
+  list-style: none;
 }
 
-h1 span {
-  font-size: 16px;
-  font-weight: normal;
-  text-shadow: none;
+blockquote, q {
+  quotes: none;
 }
 
-// $bar1-color: #BD1B03;
-// $bar2-color: #063ABD;
-// $bar3-color: #018001;
-// $bar4-color: #E4A123;
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
 
-$bar1-color: #d9534f; // red
-$bar2-color: #337ab7; // blue
-$bar3-color: #5cb85c; // green
-$bar4-color: #f0ad4e; // yellow
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
-.home-page {
-  // .jeremy-arms {
-    // margin-top: 300px;
-    // float: left;
-    // width: 30%;
-    /*bottom: 0;*/
-    /*position:;*/
-  // }
-  .jumbotron {
-    background-color: white;
+// general styles
 
-    .row {
-      // background-color: red;
-      // position: relative;
-      
-      img {
-        // position: absolute;
-        // bottom: 0;
-        margin-top: 20px;
-      }
-    }
-    .first-column {
-      // background-color: blue;
-      // position: static;
-      // height: 100%;
-    }
-    .what-i-do {
-      thead {
-        th {
-          width: 25%;
-          color: white;
-        }
-        .dev        { background-color: $bar1-color;}
-        .team       { background-color: $bar2-color;}
-        .org        { background-color: $bar3-color;}
-        .enterprise { background-color: $bar4-color;}
-      }
-      tbody {
-        .dev        { background-color: rgba($bar1-color, 0.1);}
-        .team       { background-color: rgba($bar2-color, 0.1);}
-        .org        { background-color: rgba($bar3-color, 0.1);}
-        .enterprise { background-color: rgba($bar4-color, 0.1);}
-      }
-    }
-  }
+body {
+  //font-family: 'Open Sans', sans-serif;
+  //font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 
-  .hero-wheel {
+ul {
+  list-style-type: square;
+  margin-left: 24px;
+}
+
+a {
+  color: #ff376e;
+}
+
+// landing page
+
+.landing-page {
+  .hero-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    //background-image: url("/img/background1.jpg");
+    //background-position: center center;
+    background-image: url("/img/background2.jpg");
+    background-position: center right;
+    width: 100%;
+    height: 300px;
     position: relative;
-    float: left;
-    width: 70%;
-  
-    .quarter-wheel {
+
+    .social-links {
       position: absolute;
-      /*background-color: purple;*/
-      width: 30%;
-      height: 28%;
-      /*opacity: 0.5;*/
-
-      &.top-left     { text-align: right; bottom: 52%; right: 44%;}
-      &.top-right    { text-align: left;  bottom: 44%; left:  57%;}
-      &.bottom-right { text-align: left;  top:    57%; left:  49%;}
-      &.bottom-left  { text-align: right; top:    49%; right: 52%;}
-    }
-
-    h3 {
-      margin: 0;
-      font-size: 1.4em;
+      left: 20px;
+      bottom: 20px;
+      font-size: 2.5em;
+      a {
+        color: white;
+      }
     }
   }
 
-  h1 {
-    margin-top: 15px;
+  //.top-bar {
+  //  padding: 15px;
+  //  font-size: 1.5em;
+  //}
 
-    span.case-study {
-      display: block;
-      margin-bottom: -10px;
+  .content {
+    //background-color: rgba(0, 0, 0, 0.9);
+    //color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    overflow: auto;
+
+    .hero-box {
+      display: flex;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      justify-content: center;
+
+      .words {
+        h2 {
+          font-weight: 500;
+        }
+        hr {
+          border: solid 2px;
+          margin: 30px 50% 30px 0;
+        }
+        font-size: 1.75em;
+        line-height: 1.3em;
+        width: 80%;
+
+        > p + p {
+          margin-top: 24px;
+        }
+      }
     }
   }
-
-  .testimonials {
-  }
-
-  .odd-container {
-  }
-
-  .even-container {
-    background-color: #eee;
-  }
 }
 
-blockquote {
-  margin-bottom: 30px;
-  padding-left: 30px;
-  background: url(/images/quote.png) no-repeat 0 0;
-  border-left: 0;
-}
+@media screen and (min-width: 768px) {
+  .landing-page {
+    .hero-img {
+      background-attachment: fixed;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: auto;
+      width: auto;
 
-h1 {
-  text-shadow: 1px 1px 0 #101010;
-  font-family: dejarip,arial,"helvetica neue",sans-serif;
-}
+      .social-links {
+        left: unset;
+        right: 20px;
+        font-size: 3em;
+      }
+    }
 
+    .content {
+      position: fixed;
+      top: 0;
+      right: 50%;
+      left: 0;
+      bottom: 0;
 
-.contact-container {
-  background-color: #414141;
-  color: white;
-}
+      .hero-box {
+        display: flex;
+        padding-top: 150px;
+        padding-bottom: 50px;
+        justify-content: center;
 
-footer {
-  background-color: #414141;
-  padding: 10px 0 10px;
-  margin-top: 20px;
-  color: #ddd;
-  text-align: center;
-
-  .social-links {
-  }
-
-  .links {
-    padding-top: 20px;
-  }
-
-  a {
-    color: #ddd;
+        .words {
+          width: 70%;
+        }
+      }
+    }
   }
 }
