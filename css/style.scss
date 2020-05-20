@@ -68,7 +68,7 @@ ul {
 }
 
 a {
-  color: #ff376e;
+  color: #ff0d8d;
 }
 
 // landing page
@@ -78,8 +78,6 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #464646;
-    //background-image: url("/img/background1.jpg");
-    //background-position: center center;
     background-image: url("/img/background2.jpg");
     background-position: center right;
     width: 100%;
@@ -94,18 +92,14 @@ a {
       a {
         color: white;
       }
+      > a + a {
+        margin-left: 10px;
+      }
     }
   }
 
-  //.top-bar {
-  //  padding: 15px;
-  //  font-size: 1.5em;
-  //}
-
   .content {
-    //background-color: rgba(0, 0, 0, 0.9);
-    //color: white;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     color: black;
     overflow: auto;
 
@@ -116,19 +110,27 @@ a {
       justify-content: center;
 
       .words {
+        font-size: 22px;
+        line-height: 1.35em;
+        width: 80%;
+
         h2 {
-          font-weight: 500;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 1.2em;
         }
         hr {
           border: solid 2px;
-          margin: 30px 50% 30px 0;
+          margin: 30px 0;
+          width: 50px;
         }
-        font-size: 1.75em;
-        line-height: 1.3em;
-        width: 80%;
 
         > p + p {
           margin-top: 24px;
+        }
+
+        a {
+          text-decoration: none;
         }
       }
     }
