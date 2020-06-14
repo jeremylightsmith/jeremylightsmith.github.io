@@ -1,2 +1,4 @@
 name: Jeremy Lightsmith
-markdown: redcarpet
+
+sass:
+  sass_dir: css

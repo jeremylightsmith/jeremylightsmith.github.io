@@ -1,2 +1,2 @@
 serve:
-	jekyll serve --watch
+	jekyll serve --livereload
