@@ -4,9 +4,9 @@ title:  "Open Space at NWEA"
 date:   2012-11-15 12:00:00 -0700
 categories: agile
 ---
-<a href="http://www.flickr.com/photos/onemanswalk/8189095047/in/photostream" style="float:right;margin-left: 10px;"><img src="http://farm9.staticflickr.com/8342/8189095047_63136d45d2.jpg" class="alignnone size-medium wp-image-272" /></a>
+![](http://farm9.staticflickr.com/8342/8189095047_63136d45d2.jpg){:class="img-fluid"}
 
-I spent the afternoon with "NWEA":http://www.nwea.org/. They are a portland company that builds adaptive tests for children in public schools. They ran an open space conference where they had their whole software engineering team (~70 people) from 1p - 5p.
+I spent the afternoon with [NWEA](http://www.nwea.org/). They are a portland company that builds adaptive tests for children in public schools. They ran an open space conference where they had their whole software engineering team (~70 people) from 1p - 5p.
 
 At high level, we came together in a circle, then people announced session topics that they wanted to lead (questions, ideas, …), and then we broke into small groups and talked about their work. At the end of the day, we came back together to reflect on what had happened.
 
@@ -38,10 +38,10 @@ I wanted to convey the outcomes not in my words, but theirs. So I wrote down as 
 
 “From my angle, this is amazing … this is really in our hands, we can make this happen … it makes me want to cry” - the executive sponsor
 
-h2. So what?
+## So what?
 
 What I saw as an outsider is that in a 1/2 day of conversation, they achieved a tremendous amount of understanding across teams, functions and silos. They built relationships. And they recognized problems, opportunities, and successes.
 
 How much does your company get done in a 1/2 day? 
 
-What if your company spent 1 day every quarter breaking down silos, and collectively solving problems and building relationships using "Open Space Technology":http://www.amazon.com/Open-Space-Technology-Users-Guide/dp/1576754766 ?<div style="display:none"><a href="http://fivebestessaywritingservices.blogspot.com/">http://fivebestessaywritingservices.blogspot.com</a></div>
+What if your company spent 1 day every quarter breaking down silos, and collectively solving problems and building relationships using [Open Space Technology](http://www.amazon.com/Open-Space-Technology-Users-Guide/dp/1576754766)

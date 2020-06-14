@@ -1,5 +1,6 @@
 ---
 ---
+
 $font-family-sans-serif: 'Roboto', sans-serif;
 $font-weight-normal: 300;
 $primary: #ff0d8d;
@@ -7,3 +8,42 @@ $primary: #ff0d8d;
 @import "bootstrap/bootstrap";
 @import "landing-page";
 @import "post-page";
+
+header {
+  .logo {
+    //height: 40px;
+    border-radius: 20px;
+    margin: -5px 1px -2px 0;
+  }
+}
+.container {
+  max-width: 680px;
+}
+
+.articles-page {
+  .post-card {
+    margin-bottom: 10px;
+    .post-meta {
+      color: silver;
+    }
+    .post-excerpt {
+      img {
+        width: 200px;
+      }
+    }
+  }
+}
+
+footer {
+  font-size: 1.8em;
+
+  a {
+    color: silver;
+  }
+
+  .container {
+    border-top: solid 1px silver;
+    margin-top: 40px;
+    padding: 40px 0 30px;
+  }
+}
