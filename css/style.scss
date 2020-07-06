@@ -1,10 +1,7 @@
 ---
 ---
 
-$font-family-sans-serif: 'Roboto', sans-serif;
-$font-weight-normal: 300;
-$primary: #ff0d8d;
-
+@import "constants";
 @import "bootstrap/bootstrap";
 @import "landing-page";
 @import "post-page";
