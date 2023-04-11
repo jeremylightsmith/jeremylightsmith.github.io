@@ -6,6 +6,6 @@ This is Jeremy Lightsmith's website
 Run Locally
 -----------
 
-> gem install jekyll
+> bundle
 
 > jekyll serve --watch
