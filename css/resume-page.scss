@@ -136,4 +136,27 @@ $accent: darken($primary, 20);
   .resume-page {
     padding: 0;
   }
+
+  .row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .col-md-9 {
+    flex: 0 0 75% !important;
+    max-width: 75% !important;
+  }
+
+  .col-md-3 {
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+  }
+
+  .order-md-1 {
+    order: 1 !important;
+  }
+
+  .order-md-2 {
+    order: 2 !important;
+  }
 }
