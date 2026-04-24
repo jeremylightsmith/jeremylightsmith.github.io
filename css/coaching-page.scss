@@ -1,13 +1,18 @@
 .coaching-page {
   font-family: $font-family-sans-serif;
 
+  // Override global 680px container cap — coaching sections need room to breathe
+  .container {
+    max-width: 960px;
+  }
+
   section {
     padding: 80px 0;
   }
 
   // ── Hero ──────────────────────────────────────────────────────────────────
   .hero {
-    background-image: url("/img/background2.jpg");
+    background-image: linear-gradient(to right, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.45) 100%), url("/img/background2.jpg");
     background-size: cover;
     background-position: center right;
     background-color: #2a2a2a;
@@ -29,47 +34,36 @@
       max-width: 560px;
     }
 
+    .btn {
+      padding: 12px 28px;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      margin-right: 8px;
+    }
+
     .btn-primary {
       background-color: $primary;
       border-color: $primary;
       font-weight: 700;
-      padding: 14px 32px;
-      font-size: 1.1rem;
-      margin-right: 16px;
-      margin-bottom: 12px;
 
       &:hover {
         background-color: darken(#ff0d8d, 10%);
         border-color: darken(#ff0d8d, 10%);
       }
     }
-
-    .btn-outline {
-      border: 2px solid white;
-      color: white;
-      font-weight: 300;
-      padding: 12px 28px;
-      font-size: 1.1rem;
-      background: transparent;
-      cursor: pointer;
-      margin-bottom: 12px;
-
-      &:hover {
-        background: rgba(255,255,255,0.1);
-      }
-    }
   }
 
   // ── Stakes ────────────────────────────────────────────────────────────────
   .stakes {
-    background-color: #1a1a1a;
-    color: #e0e0e0;
+    background-color: #f0f0f0;
+    color: #222;
+    border-top: 5px solid $primary;
 
     h2 {
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 24px;
-      color: white;
+      color: #111;
     }
 
     p {
@@ -180,30 +174,47 @@
       text-align: center;
     }
 
-    .step {
-      text-align: center;
-      padding: 0 24px;
-      position: relative;
-      margin-bottom: 40px;
+    .steps-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
 
-      .step-number {
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-        background-color: $primary;
-        color: white;
-        font-size: 1.4rem;
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+
+    .step-chevron {
+      flex: 0 0 auto;
+      font-size: 3rem;
+      color: $primary;
+      opacity: 0.5;
+
+      @media (max-width: 768px) {
+        transform: rotate(90deg);
+      }
+    }
+
+    .step {
+      flex: 1;
+      position: relative;
+      align-self: flex-start;
+
+      .step-num {
+        font-size: 6rem;
         font-weight: 700;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 20px;
+        line-height: 1;
+        color: $primary;
+        opacity: 0.25;
+        margin-bottom: -20px;
+        user-select: none;
       }
 
       h3 {
         font-size: 1.15rem;
         font-weight: 700;
         margin-bottom: 12px;
+        position: relative;
       }
 
       p {
@@ -211,6 +222,7 @@
         font-weight: 300;
         line-height: 1.65;
         color: #555;
+        position: relative;
       }
     }
   }
@@ -273,34 +285,19 @@
       opacity: 0.9;
     }
 
-    .btn-white {
-      background: white;
-      color: $primary;
-      font-weight: 700;
-      padding: 14px 36px;
+    .btn {
+      padding: 12px 28px;
       font-size: 1.1rem;
-      border: none;
-      cursor: pointer;
-      margin-right: 16px;
       margin-bottom: 12px;
-
-      &:hover {
-        background: #f0f0f0;
-      }
+      margin-right: 8px;
     }
 
-    .btn-outline-white {
-      border: 2px solid white;
-      color: white;
-      background: transparent;
-      font-weight: 300;
-      padding: 12px 28px;
-      font-size: 1rem;
-      cursor: pointer;
-      margin-bottom: 12px;
+    .btn-cta-primary {
+      font-weight: 700;
+      color: $primary;
 
       &:hover {
-        background: rgba(255,255,255,0.15);
+        color: darken(#ff0d8d, 10%);
       }
     }
   }
