@@ -17,9 +17,40 @@
   .site-name {
     color: white;
     font-family: $font-family-sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.1rem;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header-nav {
+    display: flex;
+    gap: 20px;
+
+    .nav-link {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      transition: color 0.15s;
+
+      &:hover {
+        color: white;
+      }
+
+      &.active {
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+    }
   }
 
   .header-cta {
