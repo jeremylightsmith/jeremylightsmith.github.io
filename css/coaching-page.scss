@@ -1,5 +1,25 @@
+.coaching-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(20, 20, 20, 0.92);
+  backdrop-filter: blur(6px);
+  padding: 16px 0;
+
+  .site-name {
+    color: white;
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+  }
+}
+
 .coaching-page {
   font-family: $font-family-sans-serif;
+  padding-top: 56px; // offset for fixed header
 
   // Override global 680px container cap — coaching sections need room to breathe
   .container {
@@ -227,21 +247,81 @@
     }
   }
 
-  // ── Services (stub) ───────────────────────────────────────────────────────
+  // ── Services ──────────────────────────────────────────────────────────────
   .services {
     background-color: white;
-    text-align: center;
 
     h2 {
       font-size: 2rem;
       font-weight: 700;
-      margin-bottom: 16px;
+      margin-bottom: 40px;
     }
 
-    .stub-note {
-      color: #aaa;
-      font-style: italic;
-      font-size: 0.9rem;
+    .services-row {
+      display: flex;
+      gap: 32px;
+      margin-bottom: 48px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+
+    .service-card {
+      flex: 1;
+      border: 2px solid #eee;
+      border-radius: 4px;
+      padding: 36px;
+
+      h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      .service-duration {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: $primary;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.7;
+        color: #444;
+        margin-bottom: 24px;
+      }
+
+      .service-pricing {
+        font-size: 0.9rem;
+        color: #888;
+        font-style: italic;
+      }
+    }
+
+    .training-callout {
+      background-color: #f8f8f8;
+      border-left: 4px solid $primary;
+      padding: 32px 40px;
+
+      h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.75;
+        color: #444;
+        max-width: 720px;
+        margin-bottom: 24px;
+      }
     }
   }
 

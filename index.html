@@ -10,7 +10,7 @@ layout: coaching
       I help ambitious people who feel stuck — in their career, their business,
       or their next chapter — find their bearings and get moving.
     </p>
-    <a href="mailto:jeremy.lightsmith@gmail.com?subject=Free Discovery Session" class="btn btn-primary">
+    <a href="{{ site.booking_url }}" class="btn btn-primary" target="_blank">
       Book a Free Discovery Session
     </a>
     <!-- TODO: replace href with actual PDF link once created -->
@@ -139,11 +139,54 @@ layout: coaching
   </div>
 </section>
 
-<!-- ── 6. SERVICES (STUB) ─────────────────────────────────────────────────── -->
+<!-- ── 6. SERVICES ────────────────────────────────────────────────────────── -->
 <section class="services">
   <div class="container">
     <h2>Ways to Work Together</h2>
-    <p class="stub-note">[Coaching packages and pricing coming soon]</p>
+    <div class="services-row">
+
+      <div class="service-card">
+        <h3>Free Discovery Call</h3>
+        <div class="service-duration">30 minutes &nbsp;·&nbsp; No commitment</div>
+        <p>
+          Before anything else, let's talk. We'll explore what's going on for you,
+          whether coaching is the right fit, and whether we're the right match.
+          No pressure — if it's not right, I'll tell you.
+        </p>
+        <a href="{{ site.discovery_url }}" class="btn btn-primary">
+          Book a Free Call
+        </a>
+      </div>
+
+      <div class="service-card">
+        <h3>Coaching Engagement</h3>
+        <div class="service-duration">3–6 months &nbsp;·&nbsp; Bi-weekly 60-min sessions</div>
+        <p>
+          A full coaching arc — from getting your bearings to building your plan
+          to moving through it. We work together consistently over time, adjusting
+          as you grow, until you're through the fog and running smooth.
+        </p>
+        <p class="service-pricing">
+          Rates are discussed on the discovery call.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="training-callout">
+      <h3>A note on timing</h3>
+      <p>
+        I'm currently completing my certification at the Hudson Institute of Coaching —
+        one of the most rigorous coaching programs in the world. During this period I'm
+        offering reduced rates to a small number of clients. That means more support,
+        more accountability, and a highly engaged coach at an accessible price point.
+        If you've been thinking about working with a coach, this is a good time to reach out.
+      </p>
+      <a href="{{ site.contact_url }}" class="btn btn-outline-dark">
+        Get in touch
+      </a>
+    </div>
+
   </div>
 </section>
 
@@ -185,7 +228,7 @@ layout: coaching
   <div class="container">
     <h2>Ready to find your way forward?</h2>
     <p>The first session is free. No commitment, no pressure — just a real conversation.</p>
-    <a href="mailto:jeremy.lightsmith@gmail.com?subject=Free Discovery Session" class="btn btn-light btn-cta-primary">
+    <a href="{{ site.booking_url }}" class="btn btn-light btn-cta-primary" target="_blank">
       Book a Free Discovery Session
     </a>
     <!-- TODO: replace href with actual PDF link once created -->
@@ -199,13 +242,13 @@ layout: coaching
 <footer class="coaching-footer">
   <div class="container">
     <div class="social-links">
-      <a href="mailto:jeremy.lightsmith@gmail.com"><i class="fas fa-envelope-square"></i></a>
+      <a href="mailto:{{ site.email }}"><i class="fas fa-envelope-square"></i></a>
       <a href="http://www.linkedin.com/in/jeremylightsmith/"><i class="fab fa-linkedin"></i></a>
       <a href="https://github.com/jeremylightsmith"><i class="fab fa-github-square"></i></a>
     </div>
     <p>
       &copy; Jeremy Lightsmith &nbsp;·&nbsp;
-      <a href="mailto:jeremy.lightsmith@gmail.com">jeremy.lightsmith@gmail.com</a>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     </p>
   </div>
 </footer>
