@@ -1,0 +1,424 @@
+.coaching-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(20, 20, 20, 0.92);
+  backdrop-filter: blur(6px);
+  padding: 16px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .site-name {
+    color: white;
+    font-family: $font-family-sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header-nav {
+    display: flex;
+    gap: 20px;
+
+    .nav-link {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      transition: color 0.15s;
+
+      &:hover {
+        color: white;
+      }
+
+      &.active {
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+
+  .header-cta {
+    background-color: $primary;
+    border-color: $primary;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+}
+
+.coaching-page {
+  font-family: $font-family-sans-serif;
+  padding-top: 56px; // offset for fixed header
+
+  // Override global 680px container cap — coaching sections need room to breathe
+  .container {
+    max-width: 960px;
+  }
+
+  section {
+    font-weight: 500;
+    padding: 80px 0;
+  }
+
+  .hl {
+    color: $primary;
+    text-transform: uppercase;
+  }
+
+  // ── Hero ──────────────────────────────────────────────────────────────────
+  .hero {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.45) 100%), url("/img/background2.jpg");
+    background-size: cover;
+    background-position: center right;
+    background-color: #2a2a2a;
+    color: white;
+    padding: 120px 0 100px;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+
+    .one-liner {
+      font-size: 1.3rem;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-bottom: 40px;
+      max-width: 560px;
+    }
+
+    .btn {
+      padding: 12px 28px;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      margin-right: 8px;
+    }
+
+    .btn-primary {
+      background-color: $primary;
+      border-color: $primary;
+      font-weight: 700;
+
+      &:hover {
+        background-color: darken(#ff0d8d, 10%);
+        border-color: darken(#ff0d8d, 10%);
+      }
+    }
+  }
+
+  // ── Stakes ────────────────────────────────────────────────────────────────
+  .stakes {
+    background-color: #f0f0f0;
+    color: #222;
+    border-top: 5px solid $primary;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #111;
+    }
+
+    p {
+      font-size: 1.15rem;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+  }
+
+  // ── Value Props ───────────────────────────────────────────────────────────
+  .value-props {
+    background-color: #f8f8f8;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+
+    .value-card {
+      text-align: center;
+      padding: 0 24px;
+      margin-bottom: 40px;
+
+      .icon {
+        font-size: 2.5rem;
+        color: $primary;
+        margin-bottom: 16px;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 0.95rem;
+        font-weight: 300;
+        line-height: 1.6;
+        color: #555;
+      }
+    }
+  }
+
+  // ── Guide ─────────────────────────────────────────────────────────────────
+  .guide {
+    background-color: white;
+
+    .guide-inner {
+      display: flex;
+      gap: 60px;
+      align-items: flex-start;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+
+    .guide-photo {
+      flex: 0 0 240px;
+
+      img {
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .guide-copy {
+      flex: 1;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.05rem;
+        font-weight: 300;
+        line-height: 1.75;
+        margin-bottom: 16px;
+        color: #333;
+      }
+
+      .authority-list {
+        margin: 20px 0 24px;
+        padding-left: 20px;
+
+        li {
+          font-size: 0.95rem;
+          font-weight: 300;
+          line-height: 1.65;
+          color: #444;
+          margin-bottom: 10px;
+        }
+      }
+
+      .authority-statement {
+        border-left: 4px solid $primary;
+        padding-left: 20px;
+        margin-top: 24px;
+        font-style: italic;
+        color: #444;
+      }
+    }
+  }
+
+  // ── Plan ──────────────────────────────────────────────────────────────────
+  .plan {
+    background-color: white;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .plan-intro {
+      font-size: 1rem;
+      font-weight: 300;
+      color: #555;
+      margin-bottom: 48px;
+    }
+
+    .steps-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+
+    .step-chevron {
+      flex: 0 0 auto;
+      font-size: 3rem;
+      color: $primary;
+      opacity: 0.5;
+
+      @media (max-width: 768px) {
+        transform: rotate(90deg);
+      }
+    }
+
+    .step {
+      flex: 1;
+      position: relative;
+      align-self: flex-start;
+
+      .step-num {
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 1;
+        color: $primary;
+        opacity: 0.25;
+        margin-bottom: -20px;
+        user-select: none;
+      }
+
+      h3 {
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+        position: relative;
+      }
+
+      p {
+        font-size: 0.95rem;
+        font-weight: 300;
+        line-height: 1.65;
+        color: #555;
+        position: relative;
+      }
+    }
+
+    .price {
+      margin-top: 48px;
+      max-width: 640px;
+
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.75;
+        color: #444;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  // ── Explanatory ───────────────────────────────────────────────────────────
+  .explanatory {
+    background-color: #f0f0f0;
+    border-top: #ddd solid 3px;
+    border-bottom: #ddd solid 3px;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  }
+
+  // ── CTA Banner ────────────────────────────────────────────────────────────
+  .cta-banner {
+    background-color: $primary;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      font-weight: 300;
+      margin-bottom: 36px;
+      opacity: 0.9;
+    }
+
+    .btn {
+      padding: 12px 28px;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      margin-right: 8px;
+    }
+
+    .btn-cta-primary {
+      font-weight: 700;
+      color: $primary;
+
+      &:hover {
+        color: darken(#ff0d8d, 10%);
+      }
+    }
+  }
+
+  // ── Footer ────────────────────────────────────────────────────────────────
+  .coaching-footer {
+    background-color: #1a1a1a;
+    color: #888;
+    padding: 48px 0;
+    text-align: center;
+
+    .social-links {
+      font-size: 2rem;
+      margin-bottom: 20px;
+
+      a {
+        color: #888;
+        margin: 0 10px;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+
+    p {
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+
+    a {
+      color: #888;
+      text-decoration: none;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

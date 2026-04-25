@@ -1,0 +1,12 @@
+<header class="coaching-header">
+  <div class="container">
+    <span class="site-name">Jeremy Lightsmith</span>
+    <div class="header-right">
+      <nav class="header-nav">
+        <a href="/" class="nav-link{% if page.url == '/' %} active{% endif %}">Coaching</a>
+        <a href="/fractional-cto" class="nav-link{% if page.url contains 'fractional-cto' %} active{% endif %}">Fractional CTO</a>
+      </nav>
+      <a href="{{ site.discovery_url }}" class="btn btn-sm btn-primary header-cta">Book a free call</a>
+    </div>
+  </div>
+</header>
