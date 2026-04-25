@@ -40,12 +40,18 @@
   }
 
   section {
+    font-weight: 500;
     padding: 80px 0;
+  }
+
+  .hl {
+    color: $primary;
+    text-transform: uppercase;
   }
 
   // ── Hero ──────────────────────────────────────────────────────────────────
   .hero {
-    background-image: linear-gradient(to right, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.45) 100%), url("/img/background2.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.45) 100%), url("/img/background2.jpg");
     background-size: cover;
     background-position: center right;
     background-color: #2a2a2a;
@@ -197,26 +203,19 @@
 
   // ── Plan ──────────────────────────────────────────────────────────────────
   .plan {
-    background-color: #f8f8f8;
+    background-color: white;
 
     h2 {
       font-size: 2rem;
       font-weight: 700;
-      margin-bottom: 48px;
-      text-align: center;
+      margin-bottom: 8px;
     }
 
     .plan-intro {
       font-size: 1rem;
       font-weight: 300;
       color: #555;
-      margin-top: 48px;
-      text-align: center;
-
-      .hl {
-        color: $primary;
-        text-transform: uppercase;
-      }
+      margin-bottom: 48px;
     }
 
     .steps-row {
@@ -270,88 +269,26 @@
         position: relative;
       }
     }
-  }
 
-  // ── Services ──────────────────────────────────────────────────────────────
-  .services {
-    background-color: white;
-
-    h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 40px;
-    }
-
-    .services-row {
-      display: flex;
-      gap: 32px;
-      margin-bottom: 48px;
-
-      @media (max-width: 768px) {
-        flex-direction: column;
-      }
-    }
-
-    .service-card {
-      flex: 1;
-      border: 2px solid #eee;
-      border-radius: 4px;
-      padding: 36px;
-
-      h3 {
-        font-size: 1.3rem;
-        font-weight: 700;
-        margin-bottom: 8px;
-      }
-
-      .service-duration {
-        font-size: 0.9rem;
-        font-weight: 300;
-        color: $primary;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-        letter-spacing: 0.04em;
-      }
-
-      p {
-        font-size: 1rem;
-        font-weight: 300;
-        line-height: 1.7;
-        color: #444;
-        margin-bottom: 24px;
-      }
-
-      .service-pricing {
-        font-size: 0.9rem;
-        color: #888;
-        font-style: italic;
-      }
-    }
-
-    .training-callout {
-      background-color: #f8f8f8;
-      border-left: 4px solid $primary;
-      padding: 32px 40px;
-
-      h3 {
-        font-size: 1.1rem;
-        font-weight: 700;
-        margin-bottom: 12px;
-      }
+    .price {
+      margin-top: 48px;
+      max-width: 640px;
 
       p {
         font-size: 1rem;
         font-weight: 300;
         line-height: 1.75;
         color: #444;
-        margin-bottom: 24px;
+        margin-bottom: 8px;
       }
     }
   }
 
   // ── Explanatory ───────────────────────────────────────────────────────────
   .explanatory {
-    background-color: #f8f8f8;
+    background-color: #f0f0f0;
+    border-top: #ddd solid 3px;
+    border-bottom: #ddd solid 3px;
 
     h2 {
       font-size: 2rem;
