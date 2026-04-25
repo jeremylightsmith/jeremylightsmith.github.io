@@ -8,12 +8,25 @@
   backdrop-filter: blur(6px);
   padding: 16px 0;
 
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .site-name {
     color: white;
     font-family: $font-family-sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: 0.02em;
+  }
+
+  .header-cta {
+    background-color: $primary;
+    border-color: $primary;
+    font-weight: 700;
+    font-size: 0.85rem;
   }
 }
 
@@ -90,7 +103,6 @@
       font-size: 1.15rem;
       font-weight: 300;
       line-height: 1.7;
-      max-width: 680px;
     }
   }
 
@@ -192,6 +204,19 @@
       font-weight: 700;
       margin-bottom: 48px;
       text-align: center;
+    }
+
+    .plan-intro {
+      font-size: 1rem;
+      font-weight: 300;
+      color: #555;
+      margin-top: 48px;
+      text-align: center;
+
+      .hl {
+        color: $primary;
+        text-transform: uppercase;
+      }
     }
 
     .steps-row {
@@ -319,7 +344,6 @@
         font-weight: 300;
         line-height: 1.75;
         color: #444;
-        max-width: 720px;
         margin-bottom: 24px;
       }
     }
@@ -340,7 +364,6 @@
       font-weight: 300;
       line-height: 1.8;
       color: #333;
-      max-width: 720px;
       margin-bottom: 20px;
     }
   }

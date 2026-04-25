@@ -1,8 +1,7 @@
 name: Jeremy Lightsmith
 email: jeremy.lightsmith@gmail.com
-booking_url: "https://calendar.app.google/QeUNxTccCZAkM5d19"
-contact_url: "mailto:jeremy.lightsmith@gmail.com?subject=Coaching inquiry"
-discovery_url: "mailto:jeremy.lightsmith@gmail.com?subject=Free Discovery Call"
+coaching_url: "https://calendar.app.google/QeUNxTccCZAkM5d19"
+discovery_url: "https://calendar.app.google/ick9BiYhkeM3UfWb6"
 
 sass:
   sass_dir: css
